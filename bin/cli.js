@@ -1,6 +1,16 @@
 #!/usr/bin/env node
 
-const args = process.argv.slice(2)
-const fullName = args.join(' ')
+import { createInterface } from 'node:readline/promises'
 
-console.log(`Hello, ${fullName}!`)
+const nameFromArguments = process.argv.slice(2).join(' ')
+const name = nameFromArguments || await askForName() || 'du'
+
+console.log(`Hej, ${name}!`)
+
+async function askForName() {
+  const rl = createInterface({ input: process.stdin, output: process.stdout })
+  const answer = await rl.question('Vad heter du? ')
+  rl.close()
+
+  return answer.trim()
+}
