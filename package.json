@@ -1,0 +1,31 @@
+{
+  "name": "1dv610-lab-1",
+  "version": "1.0.0",
+  "description": "En hälsning som svarar på rövarspråket.",
+  "type": "module",
+  "main": "src/greeter.js",
+  "bin": {
+    "halsa": "bin/cli.js"
+  },
+  "scripts": {
+    "start": "node bin/cli.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edvinkaradzas/1dv610-lab-1.git"
+  },
+  "keywords": [
+    "greeting",
+    "rovarspraket",
+    "cli"
+  ],
+  "author": "Edvin Karadza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edvinkaradzas/1dv610-lab-1/issues"
+  },
+  "homepage": "https://github.com/edvinkaradzas/1dv610-lab-1#readme"
+}
