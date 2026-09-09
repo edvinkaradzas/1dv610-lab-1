@@ -14,7 +14,7 @@ function translateCharacter(character) {
     return character
   }
 
-  return character + 'o' + character
+  return character + 'o' + character.toLowerCase()
 }
 
 function isConsonant(character) {
